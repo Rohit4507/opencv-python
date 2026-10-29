@@ -37,14 +37,14 @@ Check the manual build section if you wish to compile the bindings from source t
     **a.** Packages for standard desktop environments (Windows, macOS, almost any GNU/Linux distribution)
 
     - Option 1 - Main modules package: ``pip install opencv-python``
-    - Option 2 - Full package (contains both main modules and contrib/extra modules): ``pip install opencv-contrib-python`` (check contrib/extra modules listing from [OpenCV documentation](https://docs.opencv.org/master/))
+    - Option 2 - Full package (contains both main modules and contrib/extra modules): ``pip install opencv-contrib-python`` (check contrib/extra modules listing from [OpenCV documentation](https://docs.opencv.org/))
 
     **b.** Packages for server (headless) environments (such as Docker, cloud environments etc.), no GUI library dependencies
 
     These packages are smaller than the two other packages above because they do not contain any GUI functionality (not compiled with Qt / other GUI components). This means that the packages avoid a heavy dependency chain to X11 libraries and you will have for example smaller Docker images as a result. You should always use these packages if you do not use `cv2.imshow` et al. or you are using some other package (such as PyQt) than OpenCV to create your GUI.
 
     - Option 3 - Headless main modules package: ``pip install opencv-python-headless``
-    - Option 4 - Headless full package (contains both main modules and contrib/extra modules): ``pip install opencv-contrib-python-headless`` (check contrib/extra modules listing from [OpenCV documentation](https://docs.opencv.org/master/))
+    - Option 4 - Headless full package (contains both main modules and contrib/extra modules): ``pip install opencv-contrib-python-headless`` (check contrib/extra modules listing from [OpenCV documentation](https://docs.opencv.org/))
 
 4. Import the package:
 
@@ -54,7 +54,7 @@ Check the manual build section if you wish to compile the bindings from source t
 
     ``cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")``
 
-5. Read [OpenCV documentation](https://docs.opencv.org/master/)
+5. Read [OpenCV documentation](https://docs.opencv.org/)
 
 6. Before opening a new issue, read the FAQ below and have a look at the other issues which are already open.
 
@@ -253,4 +253,4 @@ Starting from 4.3.0 and 3.4.10 builds the Linux build environment was updated fr
 
 Starting from version 4.7.0 the Mac OS GitHub Actions build environment was update to version 11. Mac OS 10.x support deprecated. See https://github.com/actions/runner-images/issues/5583
 
-Starting from version 4.9.0 the Mac OS GitHub Actions build environment was update to version 12. Mac OS 10.x support deprecated by Brew and most of used packages.
+Starting from version 4.9.0 the Mac OS GitHub Actions build environment was update to version 12. Mac OS 10.x support deprecated by Brew and most of used packages.https://docs.opencv.org/
